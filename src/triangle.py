@@ -20,15 +20,15 @@ class Triangle(Figure):  # создан класс Треугольник
         return self.side_a + self.side_b + self.side_c
 
     def get_poluperimeter(self):
-        return triangle_1.get_perimeter / 2
+        return self.get_perimeter / 2
 
     @property
     def get_area(self):  # метод вычисления прощади Triangle
         from math import sqrt
-        return round(sqrt(triangle_1.get_poluperimeter() * (triangle_1.get_poluperimeter() - self.side_a) * (triangle_1.get_poluperimeter() - self.side_b) * (triangle_1.get_poluperimeter() - self.side_c)), 1,)  # формула Герона
+        return round(sqrt(self.get_poluperimeter() * (self.get_poluperimeter() - self.side_a) * (self.get_poluperimeter() - self.side_b) * (self.get_poluperimeter() - self.side_c)), 1,)  # формула Герона
 
 
-triangle_1 = Triangle(5.5, 6.5, 7.5)  # создан экземпляр класса
+triangle_1 = Triangle(5, 6, 7)  # создан экземпляр класса
 
 
 #print(f"Triangle 1:  {triangle_1}")

@@ -13,4 +13,4 @@ class Figure(ABC):
     def add_area(self, figure):
         if not isinstance(figure, Figure):
             raise ValueError("Переданный объект не является геометрической фигурой.")
-        return int(self.get_area() + figure.get_area())
+        return round(self.get_area() + figure.get_area(), 2)

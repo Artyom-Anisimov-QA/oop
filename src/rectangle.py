@@ -1,6 +1,7 @@
 from src.figure import Figure
 
 
+
 class Rectangle(Figure):  # создан класс Прямоугольник
     def __init__(self, side_a, side_b, side_c, side_d):  # инициализированы параметры класса
         if side_a <= 0 or side_b <= 0:
@@ -39,3 +40,4 @@ rectangle_1 = Rectangle(3, 5, 3, 5)  # создан экземпляр клас�
 #print(f"perimeter: {rectangle_1.get_perimeter}")  # вызов метода, как атрибута класса Rectangle
 #print(rectangle_1.get_diagonal_1)
 #print(rectangle_1.get_diagonal_2)
+print(rectangle_1.add_area(), square_1.add_area())
