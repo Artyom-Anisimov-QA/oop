@@ -21,7 +21,7 @@ class Circle(Figure):  # создан класс Круг
         return round(self.CONST_PI * (self.radius**2), 1)
 
 
-circle_1 = Circle(11)
+circle_1 = Circle(5.5)
 
 print(f"circle_1: {circle_1}")
 print(f"perimetr: {circle_1.get_perimeter}")
